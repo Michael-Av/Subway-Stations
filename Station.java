@@ -46,8 +46,14 @@ public class Station {
         return this.longitude;
     }
 
-    public void approxDist(Station other){
-        
+    public double approxDist(Station other){
+        int r = 6357; // In miles
+
+        double latDiff = 6.28 * Math.abs(this.getLat() - other.getLat()) / 360.0;
+        double longDiff = 6.28 * Math.abs(this.getLong() - other.getLong()) / 360.0;
+
+        double dist = Math.sqrt(Math.pow(latDiff * r, 2) + Math.pow(longDiff * r, 2));
+        return dist;
     }
 
 }
