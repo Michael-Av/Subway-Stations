@@ -27,6 +27,7 @@ public class FileHandler {
       String[] station = inputScanner.nextLine().split(",");
       Station newStation = new Station(station[5], station[6], station[8].replace("SIR","s").replace(" ",""), Double.parseDouble(station[10]), Double.parseDouble(station[11]));
       stationList.add(newStation);
+      //System.out.println(newStation);
     }
 
     return stationList;
