@@ -13,7 +13,27 @@ public class Station {
         this.longitude = longit;
     }
 
-    public void dist(Station other){
+    public String toString(){
+        String s = "Station Name: " + name + "\n";
+        s +=       "Borough:      " + borough + "\n";
+        s +=       "Train Lines:  " + lines;
+
+        return s;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public double getLat(){
+        return this.latitude;
+    }
+
+    public double getLong(){
+        return this.longitude;
+    }
+
+    public void approxDist(Station other){
 
     }
 
