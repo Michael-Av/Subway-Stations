@@ -5,17 +5,15 @@ public class Station {
     private double latitude;
     private double longitude;
 
-    public Station(String name, String borough, String lines, double lat, double long){
+    public Station(String name, String borough, String lines, double lat, double longit){
         this.name = name;
         this.borough = borough;
         this.lines = lines;
         this.latitude = lat;
-        this.longitude = long;
+        this.longitude = longit;
     }
 
-    public getName
-
-    public dist(Station other){
+    public void dist(Station other){
 
     }
 
